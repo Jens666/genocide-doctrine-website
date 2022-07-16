@@ -19,8 +19,8 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
         <link rel="manifest" href="/assets/img/site.webmanifest">
+        <link rel="icon" href="/assets/img/favicon.ico">
 
-        <link rel="icon" href="/favicon.ico">
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
         @if ($page->production)
