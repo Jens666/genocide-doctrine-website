@@ -9,3 +9,18 @@
 @import 'blog';
 
 @import 'tailwindcss/utilities';
+
+@layer base {
+    html {
+        font-family: Nunito Sans, system-ui, sans-serif;
+        color: rgba(243, 244, 246, var(--tw-text-opacity));
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: Cinzel, system-ui, serif;
+        } 
+    }
+  }

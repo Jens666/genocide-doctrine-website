@@ -37,7 +37,7 @@
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
                     <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
-                        <h1 class="text-lg md:text-2xl text-gray-100 font-semibold font-serif hover:text-blue-600 my-0">{{ $page->siteName }}</h1>
+                        <h1 class="text-lg md:text-2xl text-gray-100 font-semibold font-serif hover:text-gray-400 my-0">{{ $page->siteName }}</h1>
                     </a>
                 </div>
 

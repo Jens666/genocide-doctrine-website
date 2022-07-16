@@ -6,36 +6,19 @@ use Illuminate\Support\Str;
 return [
     'baseUrl' => '',
     'production' => false,
-    'siteName' => 'Dysgnostic',
-    'siteDescription' => 'Generate an elegant blog with Jigsaw',
-    'siteAuthor' => 'Author Name',
+    'siteName' => 'Genocide Doctrine',
+    'siteDescription' => 'Death grind from Denmark',
 
     // collections
-    'collections' => [
-        'posts' => [
-            'author' => 'Author Name', // Default author, if not provided in a post
-            'sort' => '-date',
-            'path' => 'blog/{filename}',
-        ],
-        'categories' => [
-            'path' => '/blog/categories/{filename}',
-            'posts' => function ($page, $allPosts) {
-                return $allPosts->filter(function ($post) use ($page) {
-                    return $post->categories ? in_array($page->getFilename(), $post->categories, true) : false;
-                });
-            },
-        ],
-    ],
+    'collections' => [],
 
     'menuItems' => [
+        ['link' => '/music', 'name' => 'Music'],
+        ['link' => '/media', 'name' => 'Media'],
         ['link' => '/press', 'name' => 'Press'],
         ['link' => '/about', 'name' => 'About'],
         ['link' => '/contact', 'name' => 'Contact'],
     ],
-
-    'pressAllowed' => function ($page) {
-        return true;
-    },
 
     // helpers
     'getDate' => function ($page) {
